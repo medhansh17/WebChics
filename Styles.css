@@ -1,4 +1,6 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities; /* :root {
   --blue: rgb(6, 0, 46);
 }
 
@@ -47,4 +49,4 @@
 .hehe {
   padding-top: 90px;
   color: white;
-}
+} */
