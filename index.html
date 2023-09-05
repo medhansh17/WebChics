@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebChics - One stop for you website</title>
     <link href="hehe1.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,9 +13,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="landingPage">
@@ -28,22 +32,34 @@
           />
         </div>
         <ul id="nav-items">
-          <li class="nav-li">Services</li>
-          <li class="nav-li">Projects</li>
-          <li class="nav-li">About</li>
-          <li class="nav-li">Careers</li>
-          <li class="nav-li">Contact</li>
+          <li class="nav-li"><a href="">Services</a></li>
+          <li class="nav-li"><a href="">Projects</a></li>
+          <li class="nav-li"><a href="">About</a></li>
+          <li class="nav-li"><a href="">Careers</a></li>
+          <li class="nav-li"><a href="">Contact</a></li>
         </ul>
       </nav>
       <div class="hehe">
-        <div class="container m-auto">
-          <h1 class="text-3xl">Always ready to make your life better.</h1>
+        <div class="hehe-container">
+          <h1>Always ready to make your life better.</h1>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="purple-box">
+        <h1 class="pb-h1">
+          WebChics: Threads of Technology, Fabric of Creativity
+        </h1>
+        <p class="pb-p">
+          WebChics is a reputable web development company that specializes in
+          creating innovative and effective digital solutions for businesses
+          across various industries.
+        </p>
       </div>
     </div>
     <div class="services-page">
       <heading
-        class="services-heading"
+        class="services heading"
         data-aos="fade-left"
         data-aos-duration="5000"
         >Why Choose <span>Us</span>?</heading
@@ -51,16 +67,60 @@
 
       <div class="Cards">
         <div class="Card" data-aos="fade-right" data-aos-delay="200">
-            <h3 class="card-heading">Only the highest quality.</h3>
+          <h3 class="card-heading">Only the highest quality.</h3>
         </div>
         <div class="Card" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="card-heading">Easy on the budget.</h3>
+          <h3 class="card-heading">Easy on the budget.</h3>
         </div>
         <div class="Card" data-aos="fade-left" data-aos-delay="200">
-            <h3 class="card-heading">Does the job.</h3>
+          <h3 class="card-heading">Does the job.</h3>
         </div>
       </div>
+    </div>
 
+    <div class="Projects">
+      <heading
+        class="Project heading"
+        data-aos="fade-left"
+        data-aos-duration="10000"
+        >Our Projects</heading
+      >
+      <div id="project-element">
+        <img src="Projects-element-removebg-preview.png" alt="Star" />
+      </div>
+      <div class="grid-container">
+        <!-- <div class="grid-box"></div> -->
+        <div
+          class="grid-box-1 grid-box"
+          data-aos="zoom-in-down"
+          data-aos-delay="5000"
+        >
+          <!-- <div class="grid-img"></div> -->
+          <div class="grid-heading">927</div>
+          <div class="grid-description">Customers Served</div>
+        </div>
+        <div class="grid-box" data-aos="zoom-in-up" data-aos-delay="5000">
+          <!-- <div class="grid-img"></div> -->
+          <div class="grid-heading">10000</div>
+          <div class="grid-description">Products Sold</div>
+        </div>
+        <div class="grid-box" data-aos="zoom-in-left" data-aos-delay="5000">
+          <!-- <div class="grid-img"></div> -->
+          <div class="grid-heading">658</div>
+          <div class="grid-description">Households improved</div>
+        </div>
+      </div>
+    </div>
+    <div id="quote-page">
+      <div id="quote">
+        <span data-aos="zoom-in-down"
+          >"Unleash the Power of Digital Transformation"</span
+        >
+        <div data-aos="zoom-in-up">
+          Elevate Your Online Presence with Our Expert Web Development Services!
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
