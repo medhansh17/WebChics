@@ -20,11 +20,10 @@
   width: 100vw;
   display: flex;
   height: 80px;
-  background-image: linear-gradient(to right, var(--blue), rgb(80, 0, 46));
+  background-color: var(--blue);
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid green;
-  transition: top 0.3s;
+  z-index: 1000;
 }
 #nav-logo img {
   margin-left: 20px;
@@ -40,7 +39,10 @@
 #nav-items > li:last-of-type {
   margin-right: 50px;
 }
-
+li a {
+  text-decoration: none;
+  color: white;
+}
 .hehe {
   padding-top: 90px;
   color: white;
@@ -52,7 +54,42 @@
   height: 100vh;
 }
 
-.services-heading {
+.container {
+  background-image: url("About.png");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+.purple-box {
+  background-color: #9d8cff;
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-left: 150px;
+}
+
+.pb-h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(39, 20, 20);
+}
+
+.pb-p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.heading {
   position: relative;
   top: 70px;
   left: 150px;
@@ -100,4 +137,89 @@ span {
   padding: 10px;
   font-size: 28px;
   word-break: keep-all;
+}
+
+.Projects {
+  height: 100vh;
+  color: black;
+  background-image: linear-gradient(
+    130deg,
+    white 5%,
+    rgb(118, 225, 229),
+    rgb(115, 144, 239),
+    rgb(169, 103, 179) 80%
+  );
+}
+#project-element {
+  position: relative;
+  top: 30vh;
+  left: 5vw;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.grid-container {
+  position: relative;
+  left: 20vw;
+  top: -17vh;
+  margin: 20px auto;
+  width: 640px;
+  height: 400px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 200px 200px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-box {
+  background-color: var(--blue);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.grid-box-1 {
+  grid-column-start: 2;
+}
+.grid-heading {
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  font-size: 26px;
+}
+.grid-description {
+  position: absolute;
+  top: 150px;
+  left: 21px;
+  font-size: 18px;
+}
+
+#quote-page {
+  height: 100vh;
+  background-color: var(--blue);
+  position: relative;
+}
+
+#quote {
+  position: absolute;
+  color: #9d8cff;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+#quote span {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 44px;
 }
