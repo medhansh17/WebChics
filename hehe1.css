@@ -91,10 +91,11 @@ li a {
 
 .heading {
   position: relative;
-  top: 70px;
-  left: 150px;
+  top: 7rem;
+  left: 5rem;
   font-size: 3.5rem;
   font-family: "Roboto Mono", monospace;
+  width: fit-content;
 }
 span {
   color: pink;
@@ -222,4 +223,62 @@ span {
   margin: 0 auto;
   width: fit-content;
   font-size: 44px;
+}
+
+#clients {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgb(115, 144, 239) 10%,
+    rgb(118, 225, 229) 50%,
+    white
+  );
+}
+
+.client-cards {
+  margin: 0 15%;
+  position: absolute;
+  display: flex;
+  width: 80%;
+  gap: 100px;
+  top: 40%;
+}
+
+.client-card {
+  position: relative;
+  background-color: #9d8cff;
+  height: 400px;
+  width: 25%;
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+}
+
+.client-img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 20px;
+  right: 20px;
+}
+
+.client-name {
+  position: absolute;
+  font-size: 26px;
+  width: 50%;
+  word-wrap: break-word;
+  top: 130px;
+  left: 20px;
+  font-weight: bold;
+}
+
+.client-rev {
+  position: absolute;
+  font-size: 22px;
+  width: 80%;
+  top: 210px;
+  left: 20px;
 }
