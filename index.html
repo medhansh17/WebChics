@@ -22,23 +22,30 @@
   </head>
   <body>
     <div id="landingPage">
-      <nav id="nav-bar">
-        <div id="nav-logo">
-          <img
-            src="logo_new.png"
-            alt="WebChics Logo"
-            height="76px"
-            width="170px"
-          />
-        </div>
-        <ul id="nav-items">
-          <li class="nav-li"><a href="">Services</a></li>
-          <li class="nav-li"><a href="">Projects</a></li>
-          <li class="nav-li"><a href="">About</a></li>
-          <li class="nav-li"><a href="">Careers</a></li>
-          <li class="nav-li"><a href="">Contact</a></li>
-        </ul>
-      </nav>
+      <header>
+        <nav class="navbar">
+          <div id="nav-logo">
+            <img
+              src="logo_new.png"
+              alt="WebChics Logo"
+              height="76px"
+              width="170px"
+            />
+          </div>
+          <ul class="nav-menu"">
+            <li class="nav-item"><a href="">Services</a></li>
+            <li class="nav-item"><a href="">Projects</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item"><a href="">Careers</a></li>
+            <li class="nav-item"><a href="">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
       <div class="hehe">
         <div class="hehe-container">
           <h1>Always ready to make your life better.</h1>
@@ -58,11 +65,7 @@
       </div>
     </div>
     <div class="services-page">
-      <div
-        class="services heading"
-        data-aos="fade-right"
-        data-aos-duration="5000"
-      >
+      <div class="heading" data-aos="fade-right" data-aos-duration="5000">
         Why Choose <span>Us</span>?
       </div>
 
@@ -151,7 +154,75 @@
           </div>
         </div>
       </div>
+      <div class="carousel-container">
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper">
+                <a href="#carousel__slide4" class="carousel__prev"
+                  >Go to last slide</a
+                >
+                <a href="#carousel__slide2" class="carousel__next"
+                  >Go to next slide</a
+                >
+              </div>
+            </li>
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide3" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide4" class="carousel__next"
+                >Go to next slide</a
+              >
+            </li>
+            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3" class="carousel__prev"
+                >Go to previous slide</a
+              >
+              <a href="#carousel__slide1" class="carousel__next"
+                >Go to first slide</a
+              >
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button"
+                  >Go to slide 1</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button"
+                  >Go to slide 2</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button"
+                  >Go to slide 3</a
+                >
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button"
+                  >Go to slide 4</a
+                >
+              </li>
+            </ol>
+          </aside>
+        </section>
+      </div>
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
