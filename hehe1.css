@@ -15,29 +15,45 @@
   background-size: cover;
 }
 
-#nav-bar {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
   position: fixed;
   top: 0;
   width: 100vw;
-  display: flex;
   height: 80px;
   background-color: var(--blue);
-  align-items: center;
-  justify-content: space-between;
   z-index: 1000;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+  font-size: 20px;
+}
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
 }
 #nav-logo img {
   margin-left: 20px;
   object-fit: contain;
 }
-#nav-items li {
-  list-style: none;
-  display: inline;
-  margin: 0 20px;
-  font-size: 20px;
-}
-
-#nav-items > li:last-of-type {
+.nav-menu > li:last-of-type {
   margin-right: 50px;
 }
 li a {
@@ -68,7 +84,7 @@ li a {
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin-left: 150px;
+  margin-left: 20%;
 }
 
 .pb-h1 {
@@ -141,6 +157,7 @@ span {
 }
 
 .Projects {
+  position: relative;
   height: 100vh;
   color: black;
   background-image: linear-gradient(
@@ -152,7 +169,7 @@ span {
   );
 }
 #project-element {
-  position: relative;
+  position: absolute;
   top: 30vh;
   left: 5vw;
   margin: 0;
@@ -161,10 +178,10 @@ span {
 }
 
 .grid-container {
-  position: relative;
-  left: 20vw;
-  top: -17vh;
-  margin: 20px auto;
+  position: absolute;
+  margin: 0;
+  right: 10%;
+  bottom: 15%;
   width: 640px;
   height: 400px;
   background-color: transparent;
@@ -547,14 +564,126 @@ li {
     margin-top: 5px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--blue);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
 
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    margin-right: 20px;
+    display: block;
+    cursor: pointer;
+    color: var(--blue);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 @media screen and (max-width: 800px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--blue);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  #nav-logo {
+    margin-left: -50px;
+  }
+  .hamburger {
+    margin: 3px;
+    display: block;
+    cursor: pointer;
+    color: var(--blue);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .container {
+    background-image: none;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    left: -100px;
+  }
+  .purple-box {
+    margin-left: 0;
+  }
+  .Cards {
+    position: relative;
+    top: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .Card {
+    box-sizing: border-box;
+    height: fit-content;
+    box-shadow: none;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+  }
+  .Card:hover {
+    zoom: 1;
+  }
   .client-cards {
     display: none;
   }
-  .carousel-container {
+  /* .carousel-container {
     display: block;
-  }
+  } */
   .grid-container {
     display: none;
   }
