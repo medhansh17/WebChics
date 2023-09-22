@@ -55,12 +55,15 @@
 }
 .nav-menu > li:last-of-type {
   margin-right: 50px;
+  text-decoration: none;
 }
 li a {
   text-decoration: none;
   color: white;
 }
-
+li {
+  list-style: none;
+}
 .parallax-wrap {
   position: relative;
   width: 100%;
@@ -610,6 +613,91 @@ li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 } */
 
+.site-footer {
+  background-color: #06002e;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-container h1,
+p {
+  width: fit-content;
+  margin: 10px auto;
+}
+.footer-contact,
+.footer-social {
+  flex-basis: 30%;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* Add hover effect to social icons */
+.social-icons a:hover {
+  color: #ff9900;
+}
+
+/* Style the contact boxes */
+.contact-boxes {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: flex-end; /* Center vertically */
+  margin: 0 auto;
+  flex-basis: 30%;
+}
+
+.contact-box {
+  width: 200px;
+  background-color: #9d8cff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px; /* Add some space between boxes */
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-box h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.contact-box p {
+  font-size: 14px;
+}
 @media screen and (max-width: 1200px) {
   .client-card {
     width: 30%;
